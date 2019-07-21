@@ -1,14 +1,16 @@
 doctype html
-- var links = ["Lorem", "ipsum", "dolor", "sit", "ame"]
 html
-  head
-    meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width,initial-scale=1")
-    title=title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    div.header
-      each link in links
-        a(href=link) #{link}
-    div.container
-      block content
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        title Оператор связи
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        header
+            div.logo лого нашего сайта
+            div.phoneNumber 88005553535
+            div.lk
+                div.button Личный кабинет
+        div.main
+            block main
+        footer.contacts Suspendisse potenti. Donec mollis euismod finibus. Vestibulum consectetur suscipit enim, sit amet vehicula nisl convallis in. Phasellus auctor dui at augue faucibus, vitae ultrices mi varius. Fusce sed blandit dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In in auctor est.
