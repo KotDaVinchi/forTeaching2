@@ -11,15 +11,11 @@ const lorem = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabit
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    const enties = ["мандарин", "апельсин", "грузин", "карантин", "маркер", "гендер", "монитор", "взрыв"];
-
-    let page = parseInt(req.query.page || 0);
-
-    res.render('index', {
-        array : Array(random(30)).fill(1).map(()=>({num:random(10),name:enties[random(8)]})),
-        text: lorem[page%5],
-        page
-    });
+    res.render('index', {});
 });
+
+router.get('/*',  function (req, res, next) {
+    res.render('section', {});
+})
 
 module.exports = router;
